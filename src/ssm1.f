@@ -325,17 +325,17 @@ C--RESET OLD CONCENTRATIONS IF REUSE OPTION NOT IN EFFECT
         ENDDO
 C
 C-------RESET ICBUND TO ABS(ICBUND) FOR CONSTANT CONCENTRATION CELLS
-        DO INDEX=1,NCOMP
-          DO KK=1,NLAY
-            DO II=1,NROW
-              DO JJ=1,NCOL
-                IF(ICBUND(JJ,II,KK,INDEX).LT.0) THEN
-                  ICBUND(JJ,II,KK,INDEX)=ABS(ICBUND(JJ,II,KK,INDEX))
-                ENDIF
-              ENDDO
-            ENDDO
-          ENDDO
-        ENDDO  
+C        DO INDEX=1,NCOMP
+C          DO KK=1,NLAY
+C            DO II=1,NROW
+C              DO JJ=1,NCOL
+C                IF(ICBUND(JJ,II,KK,INDEX).LT.0) THEN
+C                  ICBUND(JJ,II,KK,INDEX)=ABS(ICBUND(JJ,II,KK,INDEX))
+C                ENDIF
+C              ENDDO
+C            ENDDO
+C          ENDDO
+C        ENDDO  
 C
       ENDIF
 C
